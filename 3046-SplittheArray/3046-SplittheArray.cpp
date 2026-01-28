@@ -1,4 +1,4 @@
-// Last updated: 29/01/2026, 01:03:24
+// Last updated: 29/01/2026, 01:03:33
 1class Solution {
 2public:
 3    bool isPossibleToSplit(vector<int>& nums) {
@@ -7,10 +7,9 @@
 6            m[i]++;
 7        }
 8        for (auto i:m){
-9            cout<<i.first<<i.second<<endl;
-10            if (i.second>2){
-11                return false;
-12            }
-13        }return true;
-14    }
-15};
+9            if (i.second>2){
+10                return false;
+11            }
+12        }return true;
+13    }
+14};
