@@ -1,4 +1,4 @@
-// Last updated: 29/01/2026, 01:00:07
+// Last updated: 29/01/2026, 01:00:15
 1class Solution {
 2public:
 3    bool isPossibleToSplit(vector<int>& nums) {
