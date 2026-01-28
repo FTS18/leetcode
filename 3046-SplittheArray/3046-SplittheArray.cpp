@@ -1,8 +1,8 @@
-// Last updated: 29/01/2026, 01:00:15
+// Last updated: 29/01/2026, 01:03:24
 1class Solution {
 2public:
 3    bool isPossibleToSplit(vector<int>& nums) {
-4        map<int,int>m;
+4        unordered_map<int,int>m;
 5        for(auto i:nums){
 6            m[i]++;
 7        }
