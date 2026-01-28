@@ -1,0 +1,20 @@
+// Last updated: 28/01/2026, 16:49:34
+class Solution {
+public:
+    string largestGoodInteger(string num) {
+        string c = "";
+        int d=0;
+        for (int i = 0; i < num.size() - 2; i++) {
+            if (num[i] == num[i + 1] && num[i + 1] == num[i + 2]) {
+                if (num[i]=='0'){
+                    c= "000";
+                }
+                d=max(stoi(num.substr(i, 3)), d);
+            }
+        }
+        if(d==0){
+            return c;
+        }
+        return to_string(d);
+    }
+};
